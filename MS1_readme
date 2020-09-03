@@ -1,0 +1,96 @@
+Group 12 
+
+
+Milestone 1 file changes|updates:
+
+This document reflects the changes made to the files in \SISv5 in descending order. File's NOT altered are not in list.
+-------------------------------------------------------------------------------------------------------------------------
+
+~\SISv5\Components\VotingSoftware
+
+	
+	a) CreateVotingSoftware.java ~ this file is where the main component lives, used CreateTemp.java as a template
+	
+	b) Util.java ~ where all the helper functions live
+	
+	
+~\SISv5\ControllerComponents\VotingSoftware
+
+	[Deprecated]a) BloodPressureAlert.java ~ It was throwing errors when I took this out. Realized there's a lot of dependies
+	   so we can take those out later. Sorry its a little hacky.
+	   
+	[Deprecated]b) helper.java ~ instructions said to put this in here
+	
+	[Deprecated]c) initial.java ~ not sure
+	
+	d) pnml.xml ~ xml file that conrols component. 
+	
+	[Deprecated]e) TempAlert.java ~ same issues w/ dependencies so I kept it in for now
+	
+	
+	* These were all from section 4.5 from the README_V5.txt file 
+
+
+~\SISv5\Scripts\runIndividualComp
+
+	a) when the SIS compiles it adds runVotingSoftware.bat. This happens because of section 4.5 in the directions.
+	
+	
+~\SISv5\xml\DataXML\References	
+	
+	
+	I added the following XML messages for this milestone as per this link:
+	
+	https://people.cs.pitt.edu/~chang/163/interface1/MessageVote.htm
+	
+	a) AcknowledgeMSG.xml
+	
+	b) AckRequestReport.xml
+	
+	c) AckVote.xml
+	
+	d) ActivateComponent
+	
+	e) CastVote.xml
+	
+	f) ConnectToServer.xml
+	
+	g) CreateVotingSoftwareComponent.xml
+	
+	h) DeActivateComponent.xml
+	
+	i) InitTallyTable.xml
+	
+	j) KillComponent.xml
+	
+	k) RequestReport
+	
+	
+---------------------------------------------------------------------------------------------
+ 
+So this is ready to run as is if you download the entire SISv5 file from here. The directions to run the batch files
+are from the following sections from the SISv5 readme: 
+	
+	
+4.1. Initialize:
+		a). Go to SISv5/Scripts/: 
+		
+			i) Double click the 'runserver.bat' file to start the SIS server. 
+			
+			ii) Double click the 'runInitializer.bat' file to batch register all existing 
+			components (read all XML files under SISv5/xml/InitXML, including Controller components).
+			
+		b). GO to SISv5/Scripts/runIndividualComp/:
+		
+			i) Double click the 'runGUI.bat' file to start GUI. You will see a graphical window, 
+			which will display active components' information later. 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
